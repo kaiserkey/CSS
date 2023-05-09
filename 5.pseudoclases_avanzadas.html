@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Pseudoclases Avanzadas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /*Pseudoclases avanzadas. Se aplican con ::*/
+            span::before{
+                content: "Pseudoclases ";
+                color: red;
+            }
+
+            span::after{
+                content: " Avanzadas";
+                color: blue;
+            }
+
+            /* editar elementos de texto */
+            p::first-letter{
+                font-size: 2em;
+                color: green;
+            }
+
+            p::first-line{
+                font-size: 2em;
+                color: purple;
+            }
+            p::selection{
+                background-color: yellow;
+                color: black;
+            }
+
+            /*listas*/
+            ul li::marker{
+                font-size: 2em;
+                color: orange;
+            }
+
+            /*placeholders*/
+            input::placeholder{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenido">
+            <span>---</span>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus quibusdam a accusantium doloremque quidem voluptatibus possimus tempore molestiae, dolor impedit optio animi recusandae voluptatem. Rem, tenetur? Voluptates in autem error?</p>
+            <ul>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Lorem, ipsum dolor.</li>
+            </ul>
+
+            <input type="text" placeholder="placeholder">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Selectores agrupados</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Selectores agrupados*/
+        h1,
+        h3 {
+            color: blue;
+        }
+
+        /* Selector hijo */
+        .contenedor>h2 {
+            color: red;
+        }
+
+        /* selector hermano general */
+        .articulo h2 ~ span {
+            color: purple;
+        }
+
+        /* selector hermano adyacente */
+        .articulo h2 + span {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h3>Lorem, ipsum dolor.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, enim!</p>
+    <div class="contenedor">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, enim!</p>
+        <div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, enim!</p>
+        </div>
+    </div>
+
+    <div class="contenido">
+        <div class="articulo">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, tenetur?</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nihil!</span>
+        </div>
+        <div class="articulo">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nihil!</span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nihil!</span>
+        </div>
+        <div class="articulo">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, tenetur?</p>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nihil!</span>
+        </div>
+    </div>
+</body>
+
+</html>

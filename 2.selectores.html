@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Selectores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* Selector de etiquetas */
+            h1{
+                color: blue;
+            }
+            /* Selector de id */
+            #id{
+                color: red;
+            }
+            /* Selector de clase */
+            .clase{
+                color: green;
+            }
+
+            /*Clases agrupadas*/
+            .clase1.clase2{
+                color: orangered;
+            }
+
+            /* Selectores descendientes */
+            .clase2 .clase3{
+                color: purple;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <h3 id="id">Lorem, ipsum dolor.</h3>
+        <p class="clase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, enim!</p>
+        <p class="clase1 clase2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <b class="clase3">Amet</b>, enim!</p>
+    </body>
+</html>

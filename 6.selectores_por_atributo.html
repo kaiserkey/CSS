@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Selectores por atributo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /*selector de atributo []*/
+            input[type="text"]{
+                background-color: yellowgreen;
+            }
+            input[type="number"]{
+                background-color: rebeccapurple;
+            }
+
+            /*aplicar el estilo a varios input*/
+            input[type="text"], input[type="email"]{
+                background-color: yellowgreen;
+            }
+
+            /*enlaces*/
+            a[href="www.algo.com"]{
+                color: red;
+            }
+
+            /*que contengan una palabra*/
+            a[href*="google"]{
+                color: green;
+            }
+
+            /*que comiencen con una palabra*/
+            a[href^="https"]{
+                color:brown;
+            }
+
+            /*que terminen con una palabra*/
+            a[href$=".pdf"]{
+                color:cadetblue;
+            }
+        </style>
+    </head>
+    <body>
+        <input type="text" name="" id="">
+        <br>
+        <input type="number" name="" id="">
+        <br>
+        <input type="text" name="" id="">
+        <br>
+        <input type="text" name="" id="">
+        <br>
+        <input type="email" name="" id="">
+        <br>
+        <a href="www.algo.com">Algo.com</a>
+        <br>
+        <a href="www.google.com">Google.com</a>
+        <br>
+        <a href="www.google.com">Google.com</a>
+        <br>
+        <a href="https://www.google.com">Google.com</a>
+        <br>
+        <a href="archivo.pdf">Descargar</a>
+    </body>
+</html>

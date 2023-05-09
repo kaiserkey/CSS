@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Estilos en cascada</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* CSS Estilos en cascada: toma los elementos de arriba hacia abajo dandole mayor importancia al elemento de abajo */
+            /*Se puede romper la regla de cascada con el !important*/
+
+            p.miparrafo {
+                color: red;
+            }
+
+            p {
+                color: blue !important;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="miparrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quas nesciunt reprehenderit. Molestias, quis quibusdam? Reprehenderit rerum soluta culpa repellendus, adipisci quasi quas nesciunt odit, nemo voluptatem nihil iusto dolores!</p>
+    </body>
+</html>

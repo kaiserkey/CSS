@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Pseudoclases</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* pseudoclases */
+
+            /* enlaces no visitados */
+            a:link {
+                color: red;
+            }
+
+            /* enlaces visitados */
+            a:visited {
+                color: blue;
+            }
+
+            /* inputs seleccionado*/
+            input:focus {
+                background-color: greenyellow;
+            }
+
+            /*pasar el cursor por encima de mis elementos*/
+            input:hover {
+                background-color: yellow;
+                padding: 10px;
+            }
+
+            /*pseudoclase de negacion*/
+            p:not(.exluido) {
+                color: red;
+            }
+
+            /* pseudoclases avanzadas */
+
+            /*primer elemento*/
+            p:first-child {
+                color: blue;
+            }
+
+            /*ultimo elemento*/
+            p:last-child {
+                color: green;
+            }
+
+            /*elemento par*/
+            p:nth-child(even) {
+                color: yellow;
+            }
+
+            /*elemento impar*/
+            p:nth-child(odd) {
+                color: orange;
+            }
+
+            /*elemento en posicion 3*/
+            p:nth-child(3) {
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#">Enlace</a>
+        <br>
+        <input type="text">
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quod.</p>
+        <p class="exluido">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, iusto.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quod.</p>
+
+        <div class="contenido">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, provident.</p>
+            
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, provident.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, provident.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, provident.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, provident.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, provident.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, provident.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, provident.</p>
+        </div>
+    </body>
+</html>

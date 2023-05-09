@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Metodologia BEM</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /*
+                BEM: Block Element Modifier
+                B -> bloque .bloque
+                E -> elemento .bloque__elemento
+                M -> modificador .bloque--modificador
+            */
+            .box {
+                background-color: #ccc;
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .box__btn {
+                background-color: #000;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+
+            .box--bgred {
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eos architecto, at deleniti doloremque libero eveniet odio aliquid, dicta aspernatur magni iusto sequi doloribus sunt totam, fugiat explicabo odit repellendus.</p>
+            <button class="box__btn box--bgred">Click Aqui</button>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eos architecto, at deleniti doloremque libero eveniet odio aliquid, dicta aspernatur magni iusto sequi doloribus sunt totam, fugiat explicabo odit repellendus.</p>
+            <button class="box__btn box--bgred">Click Aqui</button>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A eos architecto, at deleniti doloremque libero eveniet odio aliquid, dicta aspernatur magni iusto sequi doloribus sunt totam, fugiat explicabo odit repellendus.</p>
+            <button class="box__btn">Click Aqui</button>
+        </div>
+    </body>
+</html>
