@@ -6,9 +6,47 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             /* Funciones */
+
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            div.menu{
+                width: 100%;
+                height: 100px;
+                background: red;
+            }
+
+            div.container{
+                background: blueviolet;
+                width: 100%;
+                height: 100vh;
+
+                /* funcion calc */
+                height: calc(100vh - 100px);
+
+                /* funcion min */
+                width: min(200px, 25%);
+
+                /* funcion max */
+                width: max(300px, 25%);
+
+                /* funcion clamp */
+                width: clamp(200px, 25%, 300px);
+            }
+
+            /* funcion attr */
+            h1::before{
+                content: attr(data-name);
+            }
         </style>
     </head>
     <body>
-        
+        <h1 data-name="Hola ">Jose</h1>
+        <div class="menu"></div>
+        <div class="container">
+
+        </div>
     </body>
 </html>

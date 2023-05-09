@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Background Blend Mode</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* background blend mode */
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            div{
+                height: 100vh;
+                width: 100vw;
+                background: url("img/background1.jpg"), url("img/background2.jpg"), rgba(135, 206, 250, 0.9);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size:cover;
+                
+                /* blend mode */
+                background-blend-mode: multiply;
+
+                /* 
+                    Distintos valores de blend mode:
+                    normal: default
+                    multiply: lo que hace es oscurecer el color de fondo con el color de la imagen
+                    screen: lo que hace es aclarar el color de fondo con el color de la imagen
+                    overlay: lo que hace es combinar los dos colores
+                    darken: lo que hace es oscurecer el color de fondo con el color de la imagen
+                    lighten: lo que hace es aclarar el color de fondo con el color de la imagen
+                    color-dodge: lo que hace es aclarar el color de fondo con el color de la imagen
+                    color-burn: lo que hace es oscurecer el color de fondo con el color de la imagen
+                    hard-light: lo que hace hard-light es combinar los dos colores
+                    soft-light: lo que hace soft-light es combinar los dos colores
+                    difference: lo que hace difference es combinar los dos colores
+                    exclusion: lo que hace esta propiedad es combinar los dos colores
+                    hue: lo que hace es combinar los dos colores
+                    saturation: lo que hace saturation es que el color de fondo se vuelve mas saturado
+                    color: lo que hace color es que el color de fondo es reemplazado por el color de la imagen
+                    luminosity: lo que hace luminosity es que el color de fondo es reemplazado por el color de la imagen
+                */
+
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            
+        </div>
+    </body>
+</html>

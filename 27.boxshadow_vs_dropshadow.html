@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Bock Shadow VS Drop Shadow</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body{
+                background-color: #187ef3;
+                text-align: center;
+            }
+
+            img{
+                margin: 100px auto;
+            }
+
+            .logo1{
+                box-shadow: 10px 10px 10px 0 white;
+            }
+
+            .logo2{
+                filter: drop-shadow(10px 10px 10px white);
+            }
+        </style>
+    </head>
+    <body>
+        <img src="img/image3.png" class="logo1">
+        <img src="img/image4.png" class="logo2">
+    </body>
+</html>

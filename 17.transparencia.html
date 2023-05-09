@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Transparencia</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* Transparencia */
+            body{
+                background: lightsalmon;
+            }
+            div{
+                background: blue;
+                width: 200px;
+                height: 200px;
+
+                /* transparente, no se ve */
+                background-color: transparent;
+                /* distintos niveles de transparencia */
+                background-color: #00000080;
+                background-color: rgba(0, 0, 0, 0.5);
+                background-color: hsla(125, 92%, 5%, 0.2);
+
+                /* transparencia con opacity */
+                background-color: blueviolet;
+                opacity: 0.5;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quod dolores assumenda amet minima inventore. A, voluptatem deserunt dolor harum aperiam nam. Atque ducimus quidem sapiente quia vel explicabo repudiandae?</p>
+        </div>
+    </body>
+</html>
