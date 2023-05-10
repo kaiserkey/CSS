@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Estilos para textos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            /* estilos para textos */
+            body{
+                background-color: black;
+            }
+            p{
+                color: burlywood;
+            }
+
+            p::first-letter{
+                color: red;
+                font-size: 50px;
+            }
+
+            p::first-line{
+                color: blue;
+                font-size: 30px;
+            }
+            h1{
+                font-size: 70px;
+                font-weight: 500;
+                font-style: italic;
+                color:burlywood;
+
+                /* espaciado entre letras */
+                letter-spacing: 5px;
+
+                /* espaciado entre palabras */
+                word-spacing: 20px;
+
+                /* espaciado entre lineas */
+                line-height: 10px;
+
+                /* sangria */
+                text-indent: 50px;
+
+                /* css3 text field */
+                -webkit-text-fill-color: lightcoral;
+                -webkit-text-stroke: 1px red;
+
+                /* alineacion de texto */
+                text-align: justify;
+
+                /* transformar el texto */
+                text-transform: uppercase;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos autem tenetur voluptas quam! Distinctio explicabo aut, fuga earum vitae, debitis rerum quasi ab assumenda at optio tempora sint porro recusandae.</p>
+    </body>
+</html>
