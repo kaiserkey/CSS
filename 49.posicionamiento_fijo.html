@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Posicionamiento Fijo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        section{
+            background: blueviolet;
+            width: 800px;
+            height: 500px;
+            margin: 30px auto;
+            position: relative;
+        }
+
+        div{
+            background: violet;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+
+            /* Position Fixed: se utiliza para que el elemento se pueda mover de su posición original, pero en este caso se mueve con respecto a la ventana del navegador */
+            position: fixed;
+            top: 100px;
+            left: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+
+        </div>
+    </section>
+    <section></section>
+    <section></section>
+</body>
+
+</html>

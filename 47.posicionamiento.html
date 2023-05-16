@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Posicionamiento</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        div{
+            background: violet;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+
+
+            /* Position Static: se utiliza para que el elemento se comporte con el orden natural de la página */
+            position: static;
+
+            /* Position Relative: se utiliza para que el elemento se pueda mover de su posición original */
+            position: relative;
+            top: 100px;
+            left: 200px;
+
+            /* Position Absolute: se utiliza para que el elemento se pueda mover de su posición original, pero en este caso se mueve con respecto al elemento padre */
+            position: absolute;
+            top: 100px;
+            left: 200px;
+
+            /* Position Fixed: se utiliza para que el elemento se pueda mover de su posición original, pero en este caso se mueve con respecto a la ventana del navegador */
+            position: fixed;
+            top: 100px;
+            left: 200px;
+
+            /* Position Sticky: se utiliza para que el elemento se pueda mover de su posición original, pero en este caso se mueve con respecto a la ventana del navegador, pero cuando se hace scroll, el elemento se queda fijo */
+            position: sticky;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Desbordamiento de texto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            h1{
+                width: 300px;
+
+
+                /* Primera Forma */
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            h2{
+                /* Segunda Forma */
+                width: 300px;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime culpa modi molestiae a voluptatibus ipsam fugit perferendis eos doloremque quis aspernatur consequatur iure est dignissimos nihil accusamus ab, vel tempora?</h1>
+        <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus libero obcaecati sunt ipsum, numquam dicta iure provident veniam recusandae repudiandae deleniti nulla. Eius, amet corporis dolorem rem animi odio optio.</h2>
+    </body>
+</html>
