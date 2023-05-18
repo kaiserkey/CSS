@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Transiciones</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            div{
+                width: 200px;
+                height: 200px;
+                margin: 70px;
+                display: inline-block;
+            }
+
+            .elemento1{
+                background: lightcoral;
+            }
+
+            .elemento-transicion{
+                background: lightgreen;
+
+                /* propiedades de la transiciones */
+                transition-property: background;
+                transition-duration: 1s;
+                transition-timing-function: linear;
+                transition-delay: .5s;
+
+                /* atajo */
+                transition: all 2s linear .2s;
+            }
+
+            .elemento1:hover{
+                background: lightgoldenrodyellow;
+            }
+
+            .elemento-transicion:hover{
+                background: lightseagreen;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="elemento1"></div>
+        <div class="elemento-transicion"></div>
+    </body>
+</html>
