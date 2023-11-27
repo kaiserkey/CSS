@@ -15,12 +15,12 @@
 
             #trasladar{
                 background: lightblue;
-                transform: translate(100px, 100px);
+                transform: translate(50px, 50px);
             }
 
             #escalar{
                 background: lightcoral;
-                transform: scale(2, 2);
+                transform: scale(1, 1);
             }
 
             #rotar{
@@ -33,6 +33,18 @@
                 transform: skew(30deg, 30deg);
             }
 
+            /* origen del transform */
+
+            #origen{
+                background: limegreen;
+                transition: all 2s;
+            }
+
+            #origen:hover{
+                transform: rotate(360deg);
+                transform-origin: left;
+            }
+
 
         </style>
     </head>
@@ -41,5 +53,6 @@
         <div id="escalar"></div>
         <div id="rotar"></div>
         <div id="deformar"></div>
+        <div id="origen"></div>
     </body>
 </html>
